@@ -1,0 +1,29 @@
+.carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel-image {
+    width: 98%;
+    height:700px;
+    /* Default for small devices */
+   
+   
+}
+
+@media (min-width: 768px) {
+    .carousel-image {
+        width:95%;
+        height: 450px;
+        /* Medium devices (tablet) */
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-image {
+        width: 95%;
+        height: 430px;
+        /* Large devices (desktop) */
+    }
+}
