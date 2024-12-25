@@ -68,7 +68,7 @@ const CustomRightArrow = ({ onClick }) => {
      if (window.innerWidth > 768) {
         setImages(['/images/1-zylh/IMG_4994.JPG', '/images/2-bly/IMG_4992.JPG', '/images/3-hda/IMG_4971.JPG','/images/4-dph/IMG_4999.JPG','/images/5-twa/IMG_5004.JPG','/images/6-amt/IMG_5006.JPG','/images/7-khh/IMG_5010.JPG','/images/8-ths/IMG_5012.JPG','/images/9-kzo/IMG_4936.JPG','/images/10-wca/IMG_5017.JPG']);
       } else {
-        setImages(['/images/1-zylh/IMG_4994.JPG', '/images/2-bly/IMG_4992.JPG', '/images/3-hda/IMG_4971.JPG','/images/4-dph/IMG_4999.JPG','/images/5-twa/IMG_5004.JPG','/images/6-amt/IMG_5006.JPG','/images/7-khh/IMG_5010.JPG','/images/8-ths/IMG_5012.JPG','/images/9-kzo/IMG_4936.JPG','/images/10-wca/IMG_5017.JPG']);
+        setImages(['/images/1-zylh/IMG_4993.JPG', '/images/2-bly/IMG_4990.JPG', '/images/3-hda/IMG_4996.JPG','/images/4-dph/IMG_4998.JPG','/images/5-twa/IMG_5002.JPG','/images/6-amt/IMG_5005.JPG','/images/7-khh/IMG_5008.JPG','/images/8-ths/IMG_5011.JPG','/images/9-kzo/IMG_5014.JPG','/images/10-wca/IMG_5015.JPG']);
       }
     };
 
