@@ -79,6 +79,8 @@ const CustomRightArrow = ({ onClick }) => {
   }, []);
 
   return (
+    <div className='container'>
+      
     <div className="carousel-container">
     <Carousel
       responsive={responsive}
@@ -92,7 +94,12 @@ const CustomRightArrow = ({ onClick }) => {
           <img src={src} className='carousel-image' alt={`Carousel Item ${index + 1}`}  />
         </div>
       ))}
-    </Carousel>
+    </Carousel>    
+    </div>
+      <div style={{height:'200px',width:'100%',background:'rgb(2, 23, 43)',marginTop:'70px'}}>
+          
+      </div>
+        <div class="overlay-div">Overlay Div</div>
     </div>
   );
 };
