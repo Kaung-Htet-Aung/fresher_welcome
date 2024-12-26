@@ -10,19 +10,30 @@
     margin-right: 7px !important;
     text-align: center;
 }
-.overlay-div {
-    width: 70%;
-    position: absolute;
-    top:77%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(8, 57, 102);
-    /* Semi-transparent overlay */
-    color: white;
-    padding: 20px;
-    text-align: center;
-  
+.footer-container {
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
+    color: #fff;
+    padding: 7rem 0;
+    background-color: #141d2a;
 }
+.inner-div {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: #8186d5;
+    top: -140px;
+    position: relative;
+    margin: 0 auto; /* Center horizontally */
+}
+.outer-div {
+    margin-left: 100px;
+    position: relative;
+    width: 500px;
+    /* Ensure the outer-div has a width */
+}
+
 .carousel-image {
     margin-top: 11px;
     width: 100%;

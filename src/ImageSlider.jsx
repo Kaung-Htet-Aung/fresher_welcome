@@ -96,10 +96,13 @@ const CustomRightArrow = ({ onClick }) => {
       ))}
     </Carousel>    
     </div>
-      <div style={{height:'200px',width:'100%',background:'rgb(2, 23, 43)',marginTop:'70px'}}>
-          
-      </div>
-        <div class="overlay-div">Overlay Div</div>
+     <div class="footer-container">
+       <div id="outer-div">
+          <div class="inner-div">2024-2025 UCSMGY FRESHER WELCOME</div>
+
+       </div>
+     </div>
+
     </div>
   );
 };
