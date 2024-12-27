@@ -100,6 +100,12 @@ const App = () => {
             </div>
           ))}
         </Carousel>
+        <div className="footer-container">
+               <div id="outer-div">
+              <div class="inner-div">2024-2025 UCSMGY FRESHER WELCOME</div>
+ 
+       </div>
+     </div>
       </div>
     </div>
   );
