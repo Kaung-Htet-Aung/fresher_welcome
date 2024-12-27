@@ -1,8 +1,8 @@
-
-.container{
+.container {
     margin: 0px;
     padding: 0px;
 }
+
 .carousel-container {
     max-width: 100%;
     margin: 0 auto;
@@ -10,6 +10,7 @@
     margin-right: 7px !important;
     text-align: center;
 }
+
 .footer-container {
     width: 100%;
     margin-top: 70px;
@@ -17,16 +18,21 @@
     color: #fff;
     padding: 7rem 0;
     background-color: #141d2a;
+
 }
+
 .inner-div {
     width: 250px;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #8186d5;
     top: -140px;
     position: relative;
-    margin: 0 auto; /* Center horizontally */
+    border-radius: 5px;
+    margin: 0 auto;
+    /* Center horizontally */
 }
+
 .outer-div {
     margin-left: 100px;
     position: relative;
@@ -35,28 +41,68 @@
 }
 
 .carousel-image {
-    margin-top: 11px;
     width: 100%;
-    height:auto
-    /* Default for small devices */  
+    height: auto;
 }
 
-@media (min-width: 768px) {
-    .carousel-image {
-        width:95%;
-        height: 450px;
-        /* Medium devices (tablet) */
-    }
+.carousel-text {
+    position: absolute;
+    bottom: -50px;
+    /* Start hidden */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
+.carousel-text.animate {
+    bottom: 6px;
+    /* Visible position */
+    opacity: 1;
+}
 
-@media (min-width: 1024px) {
-    .carousel-image {
-        width: 95%;
-        height: 430px;
-        /* Large devices (desktop) */
+@keyframes slideUp {
+    from {
+        bottom: -50px;
+        opacity: 0;
     }
-    .overlay-div{
-        top: 93%
+
+    to {
+        bottom: 20px;
+        opacity: 1;
     }
 }
+    
+    
+        @media (min-width: 1024px) {
+            .carousel-image {
+                width: 95%;
+                height: 430px;
+                /* Medium devices (tablet) */
+            }
+    
+            .overlay-div {
+                top: 93%
+            }
+    
+            .carousel-text {
+                width: 95%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .carousel-image {
+                        width: 95%;
+                        height: 430px;
+                        /* Medium devices (tablet) */
+                    }
+        
+             .overlay-div {
+                        top: 93%
+                    }
+              }
