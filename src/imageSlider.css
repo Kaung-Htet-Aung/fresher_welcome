@@ -14,10 +14,8 @@
     margin-top: -10px;
     position: relative;
     color: #fff;
-    height: 70vh;
-    background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
-     
-        background-color: #353865;
+    height: 100vh;
+    background-color: #052034;
 }
 
 .inner-div {
@@ -105,16 +103,16 @@
       min-height: 60vh;
       padding: 35px 20px;
       background: repeating-linear-gradient(#f1ede9, #f1ede9 31px, #94acd4, #94acd4 32px);
-      font-family: cursive;
+      font-family:'Courier New', Courier, monospace;
       line-height: 32px;
       outline: 0;
       text-align: left;
-      overflow-y: auto;
+      overflow-y: scroll;
       caret-color: black;
       color: black;
   }
 nav {
-    padding: 10px 30px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,7 +127,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     align-items: center;
 }
 
