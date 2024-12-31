@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./imageSlider.css";
@@ -14,7 +14,8 @@ const App = () => {
   const [images, setImages] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleItems, setVisibleItems] = useState(1); // Default to mobile view
-
+  const paperRef = useRef(null);
+  
   // Update visible items based on screen size
   const determineVisibleItems = () => {
     const width = window.innerWidth;
@@ -31,6 +32,10 @@ const App = () => {
 
   const handleSlideChange = (currentSlide) => {
     setActiveIndex(currentSlide);
+  };
+ const handleGetValue = () => {
+    const paperContent = paperRef.current.innerText; // Get plain text content
+    console.log("Paper Content:", paperContent);
   };
 
   useEffect(() => {
@@ -78,6 +83,18 @@ const App = () => {
 
   return (
     <div className="container">
+       <nav>
+        <div className="logo">
+            <img src="./images/logo.webp" alt="" width={50} height={50} style={{lineHeight:50}}/>
+        </div>
+        <ul id="menuList">
+            <li><a href="">Boy</a></li>
+            <li><a href="">Gril</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+      
+    </nav>
+
       <div className="carousel-container">
         <Carousel
           responsive={responsive}
@@ -86,7 +103,7 @@ const App = () => {
           afterChange={(previousSlide, { currentSlide }) => handleSlideChange(currentSlide)}
         >
           {images.map((src, index) => (
-            <div key={index} style={{ position: "relative" }}>
+            <div key={index} style={{ position: "relative" }} className="img-container">
               <img src={src} className="carousel-image" alt={`Carousel Item ${index + 1}`} />
               <div
                 className={`carousel-text ${
@@ -101,11 +118,30 @@ const App = () => {
           ))}
         </Carousel>
         <div className="footer-container">
-               <div id="outer-div">
-              <div class="inner-div">2024-2025 UCSMGY FRESHER WELCOME</div>
- 
-       </div>
-     </div>
+               <div id="outer-div"> 
+                  
+                   <div className="inner-div">2024-2025 UCSMGY FRESHER WELCOME</div>
+                   <div style={{width:'80%',margin:'0 auto'}}>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorum reprehenderit, quidem nobis minus odio excepturi cum.
+                      consectetur adipisicing haidh
+                      </p>
+                     
+                   </div>
+                     <div className="notepad">
+                         <div className="top"></div>
+                         <div 
+                            className="paper"
+                            contentEditable="true"
+                            ref={paperRef}
+                          >
+
+                         </div>
+                         
+                     </div>
+                      <button style={{marginTop:'10px'}}onClick={handleGetValue}>Get Value</button>
+                </div> 
+         </div>
       </div>
     </div>
   );
