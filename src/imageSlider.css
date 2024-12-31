@@ -87,7 +87,7 @@
       max-width: 600px;
       box-shadow: 10px 10px 48px rgb(0, 0, 0, 0.15);
       border-radius: 0 0 10px 10px;
-      overflow: hidden;
+      overflow-y:scroll;
   }
 
   .top {
@@ -98,16 +98,15 @@
   }
 
   .paper {
-      width:90%;
-      height: 100%;
+      width:100%;
       min-height: 60vh;
-      padding: 35px 20px;
+      height: 50px;
+      padding: 35px 0px;
       background: repeating-linear-gradient(#f1ede9, #f1ede9 31px, #94acd4, #94acd4 32px);
       font-family:'Courier New', Courier, monospace;
       line-height: 32px;
       outline: 0;
       text-align: left;
-      overflow-y: scroll;
       caret-color: black;
       color: black;
   }
