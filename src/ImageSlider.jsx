@@ -9,7 +9,53 @@ const responsive = {
   tablet: { breakpoint: { max: 768, min: 464 }, items: 2 },
   mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
 };
+const CustomLeftArrow = ({ onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        left: "-40px",
+        top: "50%",
+        transform: "translateY(-50%)",
+        background: "#004274",
+        color: "white",
+        border: "none",
+        borderRadius: "50%",
+        width: "40px",
+        height: "40px",
+        cursor: "pointer",
+        zIndex: 1000,
+      }}
+    >
+      ←
+    </button>
+  );
+};
 
+const CustomRightArrow = ({ onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        right: "-40px",
+        top: "50%",
+        transform: "translateY(-50%)",
+        background: "#004274",
+        color: "white",
+        border: "none",
+        borderRadius: "50%",
+        width: "40px",
+        height: "40px",
+        cursor: "pointer",
+        zIndex: 1000,
+      }}
+    >
+      →
+    </button>
+  );
+};
 const App = () => {
   const [images, setImages] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -90,7 +136,6 @@ const App = () => {
         <ul id="menuList">
             <li><a href="">Boy</a></li>
             <li><a href="">Gril</a></li>
-            <li><a href="">About</a></li>
         </ul>
       
     </nav>
@@ -100,6 +145,8 @@ const App = () => {
           responsive={responsive}
           draggable={true}
           swipeable={true}
+          customLeftArrow={<CustomLeftArrow/>}
+          customRightArrow={<CustomRightArrow/>}
           afterChange={(previousSlide, { currentSlide }) => handleSlideChange(currentSlide)}
         >
           {images.map((src, index) => (
@@ -112,7 +159,7 @@ const App = () => {
               >
                 <p>Mg Zeyar Lynn Htut</p>
                 <p>Section-A</p>
-                <p>No-7</p>
+                <p>Contestant No-7</p>
               </div>
             </div>
           ))}
