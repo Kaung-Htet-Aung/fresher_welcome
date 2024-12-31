@@ -15,20 +15,23 @@ const CustomLeftArrow = ({ onClick }) => {
       onClick={onClick}
       style={{
         position: "absolute",
-        left: "-40px",
-        top: "50%",
+        left: "15px",
+        top: "45%",
         transform: "translateY(-50%)",
-        background: "#004274",
+        background: 'rgba(0, 0, 0, 0.5)',
         color: "white",
         border: "none",
         borderRadius: "50%",
-        width: "40px",
-        height: "40px",
+        width: "30px",
+        height: "30px",
         cursor: "pointer",
         zIndex: 1000,
+        display: "flex", // Flexbox for centering
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      ←
+      <img src="./images/arrow.png" alt="" width={15} height={15}/>
     </button>
   );
 };
@@ -39,20 +42,23 @@ const CustomRightArrow = ({ onClick }) => {
       onClick={onClick}
       style={{
         position: "absolute",
-        right: "-40px",
-        top: "50%",
+        right: "15px",
+        top: "45%",
         transform: "translateY(-50%)",
-        background: "#004274",
+        background: 'rgba(0, 0, 0, 0.5)', /* Transparent background */
         color: "white",
         border: "none",
         borderRadius: "50%",
-        width: "40px",
-        height: "40px",
+        width: "30px",
+        height: "30px",
         cursor: "pointer",
         zIndex: 1000,
+        display: "flex", // Flexbox for centering
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      →
+      <img src="./images/right-arrow.png" alt="" width={15} height={15}/>
     </button>
   );
 };
