@@ -16,7 +16,7 @@ const CustomLeftArrow = ({ onClick }) => {
       style={{
         position: "absolute",
         left: "15px",
-        top: "45%",
+        top: "46%",
         transform: "translateY(-50%)",
         background: 'rgba(0, 0, 0, 0.5)',
         color: "white",
@@ -31,7 +31,7 @@ const CustomLeftArrow = ({ onClick }) => {
         justifyContent: "center",
       }}
     >
-      <img src="./images/arrow.png" alt="" width={15} height={15}/>
+      <img src="./images/right-arrow.png" alt="" width={'15px'} height={'15px'}/>
     </button>
   );
 };
@@ -58,7 +58,7 @@ const CustomRightArrow = ({ onClick }) => {
         justifyContent: "center",
       }}
     >
-      <img src="./images/right-arrow.png" alt="" width={15} height={15}/>
+      <img src="./images/right-arrow.png" alt="" width={'15px'} height={'15px'}/>
     </button>
   );
 };
@@ -141,7 +141,7 @@ const App = () => {
         </div>
         <ul id="menuList">
             <li><a href="">Boy</a></li>
-            <li><a href="">Gril</a></li>
+            <li><a href="">Girl</a></li>
         </ul>
       
     </nav>
@@ -151,8 +151,8 @@ const App = () => {
           responsive={responsive}
           draggable={true}
           swipeable={true}
-          customLeftArrow={<CustomLeftArrow/>}
           customRightArrow={<CustomRightArrow/>}
+          customLeftArrow={<CustomLeftArrow/>}
           afterChange={(previousSlide, { currentSlide }) => handleSlideChange(currentSlide)}
         >
           {images.map((src, index) => (
@@ -181,18 +181,7 @@ const App = () => {
                       </p>
                      
                    </div>
-                     <div className="notepad">
-                         <div className="top"></div>
-                         <div 
-                            className="paper"
-                            contentEditable="true"
-                            ref={paperRef}
-                          >
-
-                         </div>
-                         
-                     </div>
-                      <button style={{marginTop:'10px'}}onClick={handleGetValue}>Get Value</button>
+                    
                 </div> 
          </div>
       </div>

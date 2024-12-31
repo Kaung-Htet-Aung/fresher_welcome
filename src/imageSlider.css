@@ -6,12 +6,11 @@
 .carousel-container {
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 3px;
     text-align: center;
 }
 .img-container{
-   
-    width: 90%;
+    width: 98%;
+    
     margin: 0 auto;
 }
 .footer-container {
@@ -19,15 +18,15 @@
     margin-top: -10px;
     position: relative;
     color: #fff;
-    height: 100vh;
-    background-color: #4C585B;
+    height: 35vh;
+    background-color: #070F2B;
 }
 
 .inner-div {
     width: 250px;
     text-align: center;
     padding: 15px;
-    background-color: #7E99A3;
+    background-color: #535C91;
     top: -30px;
     position: relative;
     border-radius: 5px;
@@ -119,7 +118,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #7E99A3;
+    background: #424769;
     position: relative;
     height: 70px;
 }
