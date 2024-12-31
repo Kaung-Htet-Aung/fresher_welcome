@@ -31,7 +31,7 @@ const CustomLeftArrow = ({ onClick }) => {
         justifyContent: "center",
       }}
     >
-      <img src="./images/right-arrow.png" alt="" width={'15px'} height={'15px'}/>
+      <img src="./images/arrow.png" alt="" width={'15px'} height={'15px'}/>
     </button>
   );
 };
