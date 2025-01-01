@@ -16,7 +16,7 @@ const CustomLeftArrow = ({ onClick }) => {
       style={{
         position: "absolute",
         left: "15px",
-        top: "46%",
+        top: "45.5%",
         transform: "translateY(-50%)",
         background: 'rgba(0, 0, 0, 0.5)',
         color: "white",
@@ -98,132 +98,133 @@ const Girl = () => {
       if (window.innerWidth > 768) {
          setImages([
           {
-            imgSrc:"/images/girls/1-sye/IMG_5028.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"B",
+            imgSrc:"/images/girls/1-sye/IMG_50281.JPG",
+            name:'Ma Shwe Yee Eaint',
+            section:"C",
             no:1
           },
            {
-            imgSrc:"/images/girls/2-lhho/IMG_5033.JPG",
-            name:'Mg Kaung Htet Aung',
+            imgSrc:"/images/girls/2-lhho/IMG_50331.JPG",
+            name:'Ma Lin Htet Htet Oo',
             section:"A",
             no:2
           },
            {
-            imgSrc:"/images/girls/3-eksl/IMG_5034.JPG",
-            name:'Mg Kaung Htet Aung',
+            imgSrc:"/images/girls/3-eksl/IMG_50341.JPG",
+            name:'Ma Ei Kyal Sin Lin',
             section:"B",
             no:3
           },
            {
-            imgSrc: "/images/girls/4-kps/IMG_5035.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"B",
+            imgSrc: "/images/girls/4-kps/IMG_50351.JPG",
+            name:'Ma Khin Pyae Sone',
+            section:"C",
             no:4
           },
            {
-            imgSrc:"/images/girls/5-chts/IMG_5037.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"C",
+            imgSrc:"/images/girls/5-chts/IMG_50371.JPG",
+            name:'Ma Chuu Htet Thansin',
+            section:"B",
             no:5
           },
            {
-            imgSrc:"/images/girls/6-yta/IMG_5038.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
+            imgSrc:"/images/girls/6-yta/IMG_50381.JPG",
+            name:'Ma Yoon Thiri Aung',
+            section:"B",
             no:6
           },
            {
-            imgSrc:"/images/girls/7-hmn/IMG_5041.JPG",
-            name:'Mg Kaung Htet Aung',
+            imgSrc:"/images/girls/7-hmn/IMG_50411.JPG",
+            name:'Ma Hsu Myat Nwe',
             section:"B",
             no:7
           },
            {
-            imgSrc:"/images/girls/8-hhha/IMG_2035.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"C",
+            imgSrc:"/images/girls/8-hhha/IMG_20351.JPG",
+            name:'Ma Hnin Htet Htet Aung',
+            section:"A",
             no:8
           },
            {
-            imgSrc: "/images/girls/9-nlp/IMG_5046.JPG",
-            name:'Mg Kaung Htet Aung',
+            imgSrc: "/images/girls/9-nlp/IMG_50461.JPG",
+            name:'Ma Nwe Linn Phyu',
             section:"B",
             no:9
           },
            {
-            imgSrc:"/images/girls/10-mtw/IMG_5042.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"B",
+            imgSrc:"/images/girls/10-mtw/IMG_50421.JPG",
+            name:'Ma Myat Thidar Win',
+            section:"A",
             no:10
           },
          
         ]);
        
       } else {
-        setImages([
+       setImages([
           {
             imgSrc:"/images/girls/1-sye/IMG_5028.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"B",
+            name:'Ma Shwe Yee Eaint',
+            section:"C",
             no:1
           },
            {
             imgSrc:"/images/girls/2-lhho/IMG_5033.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Ma Lin Htet Htet Oo',
             section:"A",
             no:2
           },
            {
             imgSrc:"/images/girls/3-eksl/IMG_5034.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Ma Ei Kyal Sin Lin',
             section:"B",
             no:3
           },
            {
             imgSrc: "/images/girls/4-kps/IMG_5035.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"B",
+            name:'Ma Khin Pyae Sone',
+            section:"C",
             no:4
           },
            {
             imgSrc:"/images/girls/5-chts/IMG_5037.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"C",
+            name:'Ma Chuu Htet Thansin',
+            section:"B",
             no:5
           },
            {
             imgSrc:"/images/girls/6-yta/IMG_5038.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
+            name:'Ma Yoon Thiri Aung',
+            section:"B",
             no:6
           },
            {
             imgSrc:"/images/girls/7-hmn/IMG_5041.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Ma Hsu Myat Nwe',
             section:"B",
             no:7
           },
            {
             imgSrc:"/images/girls/8-hhha/IMG_2035.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"C",
+            name:'Ma Hnin Htet Htet Aung',
+            section:"A",
             no:8
           },
            {
             imgSrc: "/images/girls/9-nlp/IMG_5046.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Ma Nwe Linn Phyu',
             section:"B",
             no:9
           },
            {
             imgSrc:"/images/girls/10-mtw/IMG_5042.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"B",
+            name:'Ma Myat Thidar Win',
+            section:"A",
             no:10
           },
          
         ]);
+       
       }
     };
 
@@ -278,11 +279,9 @@ const Girl = () => {
                    <div className="inner-div">2024-2025 UCSMGY FRESHER WELCOME</div>
                    <div style={{width:'80%',margin:'0 auto'}}>
                      <p>
-                        "Welcome, freshers! It’s time to vote for your King and Queen of the batch. Let’s make this a fun start to your journey here, and may the best candidates win! Get ready to enjoy every moment"
-                      </p>
+"Welcome, freshers! It’s time to vote for the titles of this batch. Let’s make this a fun start to your journey here, and may the best candidates win! Get ready to enjoy every moment!"                      </p>
                      
                    </div>
-                    
                 </div> 
          </div>
       </div>

@@ -16,7 +16,7 @@ const CustomLeftArrow = ({ onClick }) => {
       style={{
         position: "absolute",
         left: "15px",
-        top: "46%",
+        top: "45.5%",
         transform: "translateY(-50%)",
         background: 'rgba(0, 0, 0, 0.5)',
         color: "white",
@@ -84,10 +84,7 @@ const Boy = () => {
   const handleSlideChange = (currentSlide) => {
     setActiveIndex(currentSlide);
   };
- const handleGetValue = () => {
-    const paperContent = paperRef.current.innerText; // Get plain text content
-    console.log("Paper Content:", paperContent);
-  };
+
 
   useEffect(() => {
     determineVisibleItems(); // Set on mount
@@ -99,63 +96,63 @@ const Boy = () => {
          setImages([
           {
             imgSrc:"/images/1-zylh/IMG_4994.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Zayar Lin Htet',
+            section:"B",
+            no:1
+          },
+           {
+            imgSrc:"/images/2-bly/IMG_4991.JPG",
+            name:'Mg Bhone Let Yone',
             section:"A",
+            no:2
+          },
+           {
+            imgSrc:"/images/3-hda/IMG_4971.JPG",
+            name:'Mg Hlaing Dwe Aung',
+            section:"B",
+            no:3
+          },
+           {
+            imgSrc: "/images/4-dph/IMG_4999.JPG",
+            name:'Mg Di Par Htun',
+            section:"B",
+            no:4
+          },
+           {
+            imgSrc:"/images/5-twa/IMG_5003.JPG",
+            name:'Mg Tin Win Aung',
+            section:"C",
+            no:5
+          },
+           {
+            imgSrc:"/images/6-amt/IMG_5006.JPG",
+            name:'Mg Aung Min Thu',
+            section:"A",
+            no:6
+          },
+           {
+            imgSrc:"/images/7-khh/IMG_5010.JPG",
+            name:'Mg Kyaw Hein Htet',
+            section:"B",
             no:7
           },
            {
-            imgSrc:"/images/2-bly/IMG_4990.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
+            imgSrc:"/images/8-ths/IMG_5012.JPG",
+            name:'Mg Thar Htet San',
+            section:"C",
+            no:8
           },
            {
-            imgSrc:"/images/3-hda/IMG_4996.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
+            imgSrc: "/images/9-kzo/kzo1.JPG",
+            name:'Mg Kyaw Zin Oo',
+            section:"B",
+            no:9
           },
            {
-            imgSrc: "/images/4-dph/IMG_4998.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
-          },
-           {
-            imgSrc:"/images/5-twa/IMG_5002.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
-          },
-           {
-            imgSrc:"/images/6-amt/IMG_5005.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
-          },
-           {
-            imgSrc:"/images/7-khh/IMG_5008.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
-          },
-           {
-            imgSrc:"/images/8-ths/IMG_5011.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
-          },
-           {
-            imgSrc: "/images/9-kzo/IMG_5014.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
-          },
-           {
-            imgSrc:"/images/10-wca/IMG_5015.JPG",
-            name:'Mg Kaung Htet Aung',
-            section:"A",
-            no:7
+            imgSrc:"/images/10-wca/wca1.JPG",
+            name:'Mg Wine Chit Aung',
+            section:"B",
+            no:10
           },
          
         ]);
@@ -164,61 +161,61 @@ const Boy = () => {
         setImages([
           {
             imgSrc:'/images/1-zylh/IMG_4993.JPG',
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Zayar Lin Htet',
             section:"B",
             no:1
           },
            {
             imgSrc:"/images/2-bly/IMG_4990.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Bhone Let Yone',
             section:"A",
             no:2
           },
            {
             imgSrc:"/images/3-hda/IMG_4996.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Hlaing Dwe Aung',
             section:"B",
             no:3
           },
            {
             imgSrc: "/images/4-dph/IMG_4998.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Di Par Htun',
             section:"B",
             no:4
           },
            {
             imgSrc:"/images/5-twa/IMG_5002.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Tin Win Aung',
             section:"C",
             no:5
           },
            {
             imgSrc:"/images/6-amt/IMG_5005.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Aung Min Thu',
             section:"A",
             no:6
           },
            {
             imgSrc:"/images/7-khh/IMG_5008.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Kyaw Hein Htet',
             section:"B",
             no:7
           },
            {
             imgSrc:"/images/8-ths/IMG_5011.JPG",
-            name:'Mg Kaung Htet Aung',
+            name:'Mg Thar Htet San',
             section:"C",
             no:8
           },
            {
-            imgSrc: "/images/9-kzo/IMG_5014.JPG",
-            name:'Mg Kaung Htet Aung',
+            imgSrc: "/images/9-kzo/kzo.JPG",
+            name:'Mg Kyaw Zin Oo',
             section:"B",
             no:9
           },
            {
-            imgSrc:"/images/10-wca/IMG_5015.JPG",
-            name:'Mg Kaung Htet Aung',
+            imgSrc:"/images/10-wca/wca.JPG",
+            name:'Mg Wine Chit Aung',
             section:"B",
             no:10
           },
@@ -277,9 +274,9 @@ const Boy = () => {
                   
                    <div className="inner-div">2024-2025 UCSMGY FRESHER WELCOME</div>
                    <div style={{width:'80%',margin:'0 auto'}}>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Dolorum reprehenderit, quidem nobis minus odio excepturi cum.
-                      consectetur adipisicing haidh
+                     <p>“Welcome, freshers! It’s time to vote for Titles of this batch. 
+                     Let’s make this a fun start to your journey here, and may the best candidates win! 
+                     Get ready to enjoy every moment!”
                       </p>
                      
                    </div>
