@@ -262,7 +262,7 @@ const Boy = () => {
                   index >= activeIndex && index < activeIndex + visibleItems ? "animate" : ""
                 }`}
               >
-                <p>{candidate.name}</p>
+                <p> {candidate.name}</p>
                 <p>Section-{candidate.section}</p>
                 <p>Contestant No-{candidate.no}</p>
               </div>
