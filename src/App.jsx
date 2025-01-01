@@ -1,12 +1,17 @@
 // src/App.jsx
 import React from 'react';
-import ImageSlider from './ImageSlider';
+import Boy from './Boy';
+import Girl from './Girl';
+import { BrowserRouter,Routes,Route} from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="App">
-      <ImageSlider />
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Boy/>} />
+          <Route path="/girl" element={<Girl/>} />     
+        </Routes>
+    </BrowserRouter>
   );
 };
 

@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./imageSlider.css";
-
+import "./style.css";
+import { Link,useParams } from "react-router-dom";
 const responsive = {
   superLargeDesktop: { breakpoint: { max: 4000, min: 1024 }, items: 3 },
   desktop: { breakpoint: { max: 1024, min: 768 }, items: 3 },
@@ -62,12 +62,11 @@ const CustomRightArrow = ({ onClick }) => {
     </button>
   );
 };
-const App = () => {
+const Girl = () => {
   const [images, setImages] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [visibleItems, setVisibleItems] = useState(1); // Default to mobile view
-  const paperRef = useRef(null);
-  
+  const [visibleItems, setVisibleItems] = useState(1);
+ 
   // Update visible items based on screen size
   const determineVisibleItems = () => {
     const width = window.innerWidth;
@@ -97,30 +96,133 @@ const App = () => {
     // Set images based on screen size
     const updateImages = () => {
       if (window.innerWidth > 768) {
-        setImages([
-          "/images/1-zylh/IMG_4994.JPG",
-          "/images/2-bly/IMG_4992.JPG",
-          "/images/3-hda/IMG_4971.JPG",
-          "/images/4-dph/IMG_4999.JPG",
-          "/images/5-twa/IMG_5004.JPG",
-          "/images/6-amt/IMG_5006.JPG",
-          "/images/7-khh/IMG_5010.JPG",
-          "/images/8-ths/IMG_5012.JPG",
-          "/images/9-kzo/IMG_4936.JPG",
-          "/images/10-wca/IMG_5017.JPG",
+         setImages([
+          {
+            imgSrc:"/images/girls/1-sye/IMG_5028.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:1
+          },
+           {
+            imgSrc:"/images/girls/2-lhho/IMG_5033.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"A",
+            no:2
+          },
+           {
+            imgSrc:"/images/girls/3-eksl/IMG_5034.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:3
+          },
+           {
+            imgSrc: "/images/girls/4-kps/IMG_5035.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:4
+          },
+           {
+            imgSrc:"/images/girls/5-chts/IMG_5037.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"C",
+            no:5
+          },
+           {
+            imgSrc:"/images/girls/6-yta/IMG_5038.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"A",
+            no:6
+          },
+           {
+            imgSrc:"/images/girls/7-hmn/IMG_5041.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:7
+          },
+           {
+            imgSrc:"/images/girls/8-hhha/IMG_2035.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"C",
+            no:8
+          },
+           {
+            imgSrc: "/images/girls/9-nlp/IMG_5046.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:9
+          },
+           {
+            imgSrc:"/images/girls/10-mtw/IMG_5042.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:10
+          },
+         
         ]);
+       
       } else {
         setImages([
-          "/images/1-zylh/IMG_4993.JPG",
-          "/images/2-bly/IMG_4990.JPG",
-          "/images/3-hda/IMG_4996.JPG",
-          "/images/4-dph/IMG_4998.JPG",
-          "/images/5-twa/IMG_5002.JPG",
-          "/images/6-amt/IMG_5005.JPG",
-          "/images/7-khh/IMG_5008.JPG",
-          "/images/8-ths/IMG_5011.JPG",
-          "/images/9-kzo/IMG_5014.JPG",
-          "/images/10-wca/IMG_5015.JPG",
+          {
+            imgSrc:"/images/girls/1-sye/IMG_5028.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:1
+          },
+           {
+            imgSrc:"/images/girls/2-lhho/IMG_5033.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"A",
+            no:2
+          },
+           {
+            imgSrc:"/images/girls/3-eksl/IMG_5034.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:3
+          },
+           {
+            imgSrc: "/images/girls/4-kps/IMG_5035.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:4
+          },
+           {
+            imgSrc:"/images/girls/5-chts/IMG_5037.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"C",
+            no:5
+          },
+           {
+            imgSrc:"/images/girls/6-yta/IMG_5038.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"A",
+            no:6
+          },
+           {
+            imgSrc:"/images/girls/7-hmn/IMG_5041.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:7
+          },
+           {
+            imgSrc:"/images/girls/8-hhha/IMG_2035.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"C",
+            no:8
+          },
+           {
+            imgSrc: "/images/girls/9-nlp/IMG_5046.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:9
+          },
+           {
+            imgSrc:"/images/girls/10-mtw/IMG_5042.JPG",
+            name:'Mg Kaung Htet Aung',
+            section:"B",
+            no:10
+          },
+         
         ]);
       }
     };
@@ -140,8 +242,8 @@ const App = () => {
             <img src="./images/logo.webp" alt="" width={50} height={50} style={{lineHeight:50}}/>
         </div>
         <ul id="menuList">
-            <li><a href="">Boy</a></li>
-            <li><a href="">Girl</a></li>
+            <li><Link to="/">Boys</Link></li>
+            <li><Link to="/girl">Girls</Link></li>
         </ul>
       
     </nav>
@@ -155,17 +257,17 @@ const App = () => {
           customLeftArrow={<CustomLeftArrow/>}
           afterChange={(previousSlide, { currentSlide }) => handleSlideChange(currentSlide)}
         >
-          {images.map((src, index) => (
+          {images.map((candidate, index) => (
             <div key={index} style={{ position: "relative" }} className="img-container">
-              <img src={src} className="carousel-image" alt={`Carousel Item ${index + 1}`} />
+              <img src={candidate.imgSrc} className="carousel-image" alt={`Carousel Item ${index + 1}`} />
               <div
                 className={`carousel-text ${
                   index >= activeIndex && index < activeIndex + visibleItems ? "animate" : ""
                 }`}
               >
-                <p>Mg Zeyar Lynn Htut</p>
-                <p>Section-A</p>
-                <p>Contestant No-7</p>
+                <p>{candidate.name}</p>
+                <p>Section-{candidate.section}</p>
+                <p>Contestant No-{candidate.no}</p>
               </div>
             </div>
           ))}
@@ -175,9 +277,8 @@ const App = () => {
                   
                    <div className="inner-div">2024-2025 UCSMGY FRESHER WELCOME</div>
                    <div style={{width:'80%',margin:'0 auto'}}>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Dolorum reprehenderit, quidem nobis minus odio excepturi cum.
-                      consectetur adipisicing haidh
+                     <p>
+                        "Welcome, freshers! It’s time to vote for your King and Queen of the batch. Let’s make this a fun start to your journey here, and may the best candidates win! Get ready to enjoy every moment"
                       </p>
                      
                    </div>
@@ -189,4 +290,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Girl;
