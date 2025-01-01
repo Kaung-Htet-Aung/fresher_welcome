@@ -89,10 +89,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #4A628A;
+    background: #424769;
     position: relative;
     height: 70px;
-    font-family: serif;
+    font-family:serif;
 }
 
 .logo {
